@@ -53,4 +53,4 @@ Projekt vyuziva Vite pro rychly build a React (Hooks) pro spravu stavu.
 1. App.jsx posle aktualni data otazky do Quiz.jsx.
 2. Quiz.jsx spusti odpocet casu.
 3. Po kliknuti na odpoved (nebo vyprseni casu) Quiz.jsx vyhodnoti spravnost a posle vysledek zpet do App.jsx pres callback onAnswer.
-4. App.jsx pricte body, zvysi index otazky a prekresli komponentu s novymi daty (coz resetuje casovac v Quiz.jsx).
+4. App.jsx pricte body, zvysi index otazky a prekresli komponentu s novymi daty (coz resetuje casovac v Quiz.jsx).# projekticek2
