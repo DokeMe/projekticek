@@ -1,6 +1,8 @@
 # React Quiz App
 
-Jednoducha a moderni kvizova aplikace postavena na knihovne React. Aplikace obsahuje uvodni obrazovku, casovy limit pro kazdou otazku a zaverecne vyhodnoceni skore. Design je laden do minimalistickeho stylu s durazem na prehlednost (Ferrari Red & Neutral White).
+Obsahuje uvodni obrazovku, casovy limit pro kazdou otazku a zaverecne vyhodnoceni skore. 
+
+live aplikace zde: projekticek-oluy.vercel.app
 
 ## Funkce
 
@@ -8,11 +10,9 @@ Jednoducha a moderni kvizova aplikace postavena na knihovne React. Aplikace obsa
 * Casovac: Limit 10 sekund na kazdou otazku.
 * Interaktivita: Okamzita blokace odpovedi po vyprseni casu nebo vyberu.
 * Vyhodnoceni: Zobrazeni celkoveho skore a procentualni uspesnosti.
-* Responsivita: Plne funkcni na desktopu i mobilnich zarizenich.
 
 ## Pozadavky
 
-Pred spustenim se ujistete, ze mate nainstalovany:
 * Node.js, verze 14 nebo novejsi
 * npm
 
@@ -22,15 +22,14 @@ Pred spustenim se ujistete, ze mate nainstalovany:
    git clone <url-repozitare>
    cd nazev-slozky
 
-2. Instalace zavislosti:
-   Ve slozce projektu spustte prikaz pro instalaci balicku (React, Vite atd.):
+2. Instalace dependencies:
+   
    npm install
 
 ## Spusteni
 
-Pro spusteni vyvojoveho serveru (development mode) pouzijte prikaz:
-
 npm run dev
+
 ## Architektura aplikace
 
 Projekt vyuziva Vite pro rychly build a React (Hooks) pro spravu stavu.
