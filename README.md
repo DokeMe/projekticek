@@ -2,7 +2,7 @@
 
 Obsahuje uvodni obrazovku, casovy limit pro kazdou otazku a zaverecne vyhodnoceni skore. 
 
-live aplikace zde: [Otevřít (Live Demo)](https://projekticek-oluy.vercel.app)
+live aplikace zde: [Otevřít](https://projekticek-oluy.vercel.app)
 
 ## Funkce
 
