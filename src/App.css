@@ -1,0 +1,175 @@
+:root {
+  --ferrari-red: #D40000;
+  --ferrari-dark: #a80000;
+  --bg-page: #f8f9fa;
+  --bg-card: #ffffff;
+  --text-main: #212529;
+  --text-muted: #6c757d;
+  --border-color: #dee2e6;
+  --success: #198754;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: var(--bg-page);
+  color: var(--text-main);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app-container {
+  width: 500px;
+  max-width: 90vw;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.quiz-card, .result-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+  text-align: center;
+  color: var(--ferrari-red);
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+  margin: 20px 0 30px 0;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.progress {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+
+.timer-container {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--ferrari-red);
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.timer-label {
+  color: var(--text-muted);
+}
+
+.timer-value {
+  color: var(--text-main);
+  font-variant-numeric: tabular-nums;
+}
+
+.timer-value.danger {
+  color: var(--ferrari-red);
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+.options-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+button.btn-option {
+  width: 100%;
+  padding: 15px 20px;
+  font-size: 1rem;
+  background-color: white;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  color: var(--text-main);
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+button.btn-option:hover:not(:disabled) {
+  border-color: var(--ferrari-red);
+  color: var(--ferrari-red);
+  background-color: #fff5f5;
+}
+
+button.btn-option.selected {
+  background-color: var(--text-main);
+  color: white;
+  border-color: var(--text-main);
+}
+
+button.btn-option.correct {
+  background-color: var(--success);
+  border-color: var(--success);
+  color: white;
+}
+
+button.btn-option.wrong {
+  background-color: var(--ferrari-red);
+  border-color: var(--ferrari-red);
+  color: white;
+}
+
+button.btn-option.disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.next-btn, .restart-btn {
+  width: 100%;
+  margin-top: 25px;
+  padding: 16px;
+  background-color: var(--ferrari-red);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.next-btn:hover, .restart-btn:hover {
+  background-color: var(--ferrari-dark);
+}
+
+.score-display {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.percentage {
+  display: block;
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--ferrari-red);
+  margin: 10px 0;
+}
